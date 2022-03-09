@@ -8,6 +8,8 @@ spring:
         uri: lb://servicio-personas
         predicates:
           - Path=/api/personas/**
+        filters:
+          - StripPrefix=2
 eureka:                  
  client:
   serviceUrl:
