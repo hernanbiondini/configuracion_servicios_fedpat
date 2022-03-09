@@ -8,9 +8,6 @@ spring:
         uri: lb://servicio-personas
         predicates:
           - Path=/api/personas/**
-        filters:
-          - StripPrefix=2
-          - EjemploCookie=Hola mi mensaje personalizado, usuario, Hernan
 eureka:                  
  client:
   serviceUrl:
