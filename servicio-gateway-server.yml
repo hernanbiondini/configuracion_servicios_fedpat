@@ -1,6 +1,4 @@
-server:
-  port: 7000
-spring:
+pring:
   cloud:
     gateway:
       routes:
